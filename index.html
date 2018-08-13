@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Umbrella</title>
+  
+  <style>
+    :root {
+      --r: rgb(255,0,0);
+      --rT: rgba(255,0,0,0);
+      --y: rgb(255,255,0);
+      --yT: rgba(255,255,0,0);
+      --b: rgb(0,0,255);
+      --bT: rgba(0,0,255,0);
+      --d: rgb(0,0,0);
+      --dT: rgba(0,0,0,0);
+    }
+
+    .body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .umbrella-box{
+      position: relative;
+      width: 410px;
+      height: 516px;
+      border-radius: 200px 200px 0 0;
+      margin-top: 100px;
+      background: 
+        linear-gradient(90deg, var(--d) 50%, var(--dT) 50%) 202px -1px / 12px 406px, 
+        radial-gradient(100% 200% at 50% 100%, var(--b) 50%, var(--bT) 50.25%) 50% 1px / 140px 190px, 
+        radial-gradient(100% 200% at 50% 100%, var(--d) 50%, var(--dT) 50.25%) 50% -2px / 148px 195px, 
+        radial-gradient(100% 200% at 50% 100%, var(--y) 50%, var(--yT) 50.25%) 50% 1px / 280px 190px, 
+        radial-gradient(100% 200% at 50% 100%, var(--d) 50%, var(--dT) 50.25%) 50% -4px / 290px 200px, 
+        radial-gradient(100% 200% at 50% 100%, var(--r) 50%, var(--rT) 50.25%) 50% 1px / 396px 191px, 
+        radial-gradient(100% 200% at 50% 100%, var(--d) 50%, var(--dT) 50.25%) 50% -8px / 410px 205px;
+      background-repeat: no-repeat;
+    }
+
+    .umbrella-box:after{
+      position: absolute;
+      left: 186px;
+      top: -37px;
+      display: block;
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: #ccc;
+      border: 5px solid #000;
+      border-radius: 50%;
+    }
+
+    .umbrella-box:before{
+      position: absolute;
+      left: 188px;
+      top: 400px;
+      display: block;
+      content: '';
+      width: 24px;
+      height: 110px;
+      background: #f0c567;
+      border: 5px solid #000;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 雨伞 author: faye-->
+  <div class="umbrella-box"></div>
+</body>
+</html>
